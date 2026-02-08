@@ -664,9 +664,9 @@ section {
 }
 
 .event-status.coming-soon {
-    background: rgba(255, 71, 87, 0.2);
-    color: var(--accent-light);
-    border: 1px solid var(--accent);
+    background: rgba(136, 136, 136, 0.2);
+    color: var(--text-lighter);
+    border: 1px solid var(--text-lighter);
 }
 
 .event-status.passed {
