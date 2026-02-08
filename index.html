@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Инди-гранж — Карточка музыканта</title>
+  <meta name="description" content="Альтернативная рок-группа: инди/гранж/шугейз. Карточка музыканта с релизами и участниками.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" aria-label="Заголовок сайта">
+    <div class="wrap">
+      <div class="brand">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span class="brand-name">Сумеречный Звон</span>
+      </div>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about" class="nav-item">О группе</a>
+        <a href="#releases" class="nav-item">Релизы</a>
+        <a href="#members" class="nav-item">Участники</a>
+        <a href="#contact" class="nav-item">Контакты</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" aria-label="Переключить тему"></button>
+    </div>
+  </header>
+
+  <main id="main" class="main-content" role="main">
+    <!-- Главная карточка артиста -->
+    <section class="card-hero wrap" aria-label="Карточка артиста">
+      <div class="artist-media">
+        <img src="assets/artist-cover.jpg" alt="Обложка группы или баннер" class="cover" loading="lazy" />
+        <div class="cover-glass"></div>
+      </div>
+
+      <div class="artist-info">
+        <h1 class="artist-name">Сумеречный Звон</h1>
+        <p class="tagline">инди/гранж/шугейз • тройка из глубин города</p>
+
+        <div class="socials">
+          <a href="https://tagger.example/profile" target="_blank" rel="noopener" class="tagger-link" aria-label="Tagger профиль">Tagger</a>
+          <a href="#" class="social-icon" aria-label="Instagram" title="Instagram">
+            <span>IG</span>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube" title="YouTube">
+            <span>YT</span>
+          </a>
+        </div>
+
+        <div class="cta-row">
+          <a href="#releases" class="btn btn-primary">Смотреть релизы</a>
+          <a href="#about" class="btn btn-secondary">Узнать историю</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел: о группе -->
+    <section id="about" class="section wrap about-section" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">О группе</h2>
+      <p class="lead">
+        Сумеречный Звон — альтернативная рок-группа, где тишина и грохот соседствуют на грани. Звонкие гитары, слоистые дилеки эффектов и меланхоличные мелодии, которые замирают между шумом городских огней.
+      </p>
+      <p>
+        Их звучание сочетает инди-роковую искренность, гранжевые грувы и шугейзовую дымку, создавая атмосферу, в которую хочется возвращаться снова и снова.
+      </p>
+
+      <div class="members" aria-label="Участники группы">
+        <div class="member-card">
+          <img src="assets/members/member1.jpg" alt="Участник 1 — вокал" class="member-photo" loading="lazy" />
+          <div class="member-name">Иван Ночной</div>
+          <div class="member-role">Вокал, гитара</div>
+          <p class="member-bio">Лирик, чья речь кажется эхом из подземелий города; пишет тексты о тьме и надежде.</p>
+        </div>
+
+        <div class="member-card">
+          <img src="assets/members/member2.jpg" alt="Участник 2 — гитара" class="member-photo" loading="lazy" />
+          <div class="member-name">Мария Тень</div>
+          <div class="member-role">Гитара</div>
+          <p class="member-bio">Грациозная атмосфера: дисторшн и слова, переплетённые в слоистые слои звука.</p>
+        </div>
+
+        <div class="member-card">
+          <img src="assets/members/member3.jpg" alt="Участник 3 — бас/бэк-вокал" class="member-photo" loading="lazy" />
+          <div class="member-name">Сергей Шум</div>
+          <div class="member-role">Бас, бэк-вокал</div>
+          <p class="member-bio">Тепло низких частот, удерживающее бит и пространство для каждого импульса ритма.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел: релизы -->
+    <section id="releases" class="section wrap releases-section" aria-labelledby="releases-title">
+      <h2 id="releases-title" class="section-title">Релизы</h2>
+
+      <div class="releases-grid" aria-label="Карточки релизов">
+        <!-- Повторяйте блоки ниже для каждого релиза -->
+        <article class="release-card" tabindex="0">
+          <div class="release-cover">
+            <img src="assets/releases/ep1.jpg" alt="Обложка релиза EP 1" loading="lazy" />
+          </div>
+          <div class="release-info">
+            <div class="release-year">2023</div>
+            <div class="release-title">Глухая Стихия</div>
+            <div class="release-format">EP • 6 треков</div>
+            <a href="#" class="release-link" target="_blank" rel="noopener">Слушать</a>
+          </div>
+        </article>
+
+        <article class="release-card" tabindex="0">
+          <div class="release-cover">
+            <img src="assets/releases/album1.jpg" alt="Обложка релиза альбом" loading="lazy" />
+          </div>
+          <div class="release-info">
+            <div class="release-year">2022</div>
+            <div class="release-title">Пепельный Ритм</div>
+            <div class="release-format">LP • 9 треков</div>
+            <a href="#" class="release-link" target="_blank" rel="noopener">Слушать</a>
+          </div>
+        </article>
+
+        <article class="release-card" tabindex="0">
+          <div class="release-cover">
+            <img src="assets/releases/single1.jpg" alt="Обложка сингла" loading="lazy" />
+          </div>
+          <div class="release-info">
+            <div class="release-year">2021</div>
+            <div class="release-title">Железный Гром</div>
+            <div class="release-format">Single • 1 трек</div>
+            <a href="#" class="release-link" target="_blank" rel="noopener">Слушать</a>
+          </div>
+        </article>
+        <!-- END релизы -->
+      </div>
+    </section>
+
+    <!-- Раздел: контакты / фан-зона -->
+    <section id="contact" class="section wrap contact-section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Контакты</h2>
+      <p class="lead">Для пресс, концертов и сотрудничеств пишите на email: contact@su-mer.ru</p>
+      <form class="contact-form" aria-label="Форма контактов" onsubmit="return false;">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Сообщение" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap" role="contentinfo" aria-label="Подвал сайта">
+    <p>&copy; 2026 Сумеречный Звон. Все права сохранены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
